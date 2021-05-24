@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact Me</title>
+</head>
+
+<body>
+  <h3>My Contact Details</h3>
+  <ul>
+    <li><strong>Name: </strong>Rohan Bolla</li>
+    <li><strong>Phone No: </strong><a href="tel:8888888888">8888888888</a></li>
+    <li><strong>Email ID: </strong><a href="mailto:granadarohan@gmail.com">granadarohan@gmail.com</a></li>
+  </ul>
+  <!--if you don't use encoding attribute in <form enctype="text/plain">
+  when you click submit the data will appear gibberish when it opens mail app
+
+  mention in name="" attribute so that it shows up in the mail after submit like
+  yourName=rohan
+  yourEmail=mail@gmail.com
+  yourText=message
+
+  above is example of imput data to the form
+
+  This is very basic, so we'll use javascript for making it more powerful later
+-->
+  <form action="mailto:granadarohan@gmail.com" method="post" enctype="text/plain">
+    <label>Your Name:</label>
+    <input type="text" name="yourName" value=""><br>
+    <label>Your Email:</label>
+    <input type="email" name="yourEmail" value=""><br>
+    <label>Your Message:</label><br>
+    <textarea name="yourText" rows="10" cols="30"></textarea><br>
+    <input type="submit" name="">
+  </form>
+</body>
+
+</html>
